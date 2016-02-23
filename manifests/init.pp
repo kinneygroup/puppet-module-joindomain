@@ -12,8 +12,8 @@
 #
 class joindomain (
   $domain    =  undef,
-  $username  =  undef,
-  $password  =  undef,
+  $username  =  hiera('org::ad_admin'),
+  $password  =  hiera('org::ad_admin_password'),
   #$oupath   =  undef,
 
   ) {
